@@ -1,0 +1,192 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #f4c542;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+#hero p {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#services .service {
+    margin-bottom: 30px;
+}
+
+#services .service h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#services .service p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* Blog Section */
+#blog {
+    padding: 50px 0;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog-posts .post {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.blog-posts .post h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.blog-posts .post a {
+    text-decoration: none;
+    color: #f4c542;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .blog-posts {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 15px;
+    }
+}
